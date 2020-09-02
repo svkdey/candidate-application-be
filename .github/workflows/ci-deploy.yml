@@ -2,8 +2,12 @@ name: Deploy
 
 on:
   push:
+<<<<<<< HEAD
+    branches: [ master ]
+=======
     branches:
       - master
+>>>>>>> master
 
 jobs:
   build:
@@ -14,4 +18,8 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "candidate-app-telstra" #Must be unique in Heroku
+<<<<<<< HEAD
           heroku_email: "svkdey9@gmail.com"
+=======
+          heroku_email: "svkdey9@gmail.com"
+>>>>>>> master
